@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Finance App</title>
+    <!-- Include CSS and JavaScript links here -->
+<link rel="stylesheet" type="text/css" href="D:\personal_finance_app\static\css\styles.css">
+<link rel="stylesheet" href="D:\personal_finance_app\static\js\scripts.js">
+
+</head>
+<body>
+
+    <header>
+        <!-- Header content here -->
+    </header>
+
+    <h2>Welcome, {{ current_user.username }}</h2>
+    
+    <!-- Display user's expenses, charts, and recommendations -->
+    
+    <h3>Expense Tracking</h3>
+    <form method="POST" action="expenses.html">
+        {{ form.hidden_tag() }}
+        {{ form.amount.label }} {{ form.amount() }}
+        {{ form.submit() }}
+    </form>
+    
+    <h3>Recommendations</h3>
+    <ul>
+        {% for recommendation in recommendations %}
+            <li>{{ recommendation }}</li>
+        {% endfor %}
+    </ul>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
+
+
+{% endblock %}

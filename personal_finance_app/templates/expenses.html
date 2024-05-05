@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Finance App</title>
+    <!-- Include CSS and JavaScript links here -->
+<link rel="stylesheet" type="text/css" href="D:\personal_finance_app\static\css\styles.css">
+<link rel="stylesheet" href="D:\personal_finance_app\static\js\scripts.js">
+
+</head>
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+
+<h2>Add Expenses</h2>
+<form method="POST" action="{{ url_for('add_expense') }}">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        {{ form.amount.label(class="form-label") }}
+        {{ form.amount(class="form-control", placeholder="Enter amount", step="0.01", required=true) }}
+    </div>
+    <button type="submit" class="btn btn-primary">Add Expense</button>
+</form>
+<a href="dashboard.html" class="btn btn-secondary mt-2">Back to Dashboard</a>
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
+
+{% endblock %}

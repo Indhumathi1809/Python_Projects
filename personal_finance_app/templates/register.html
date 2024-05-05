@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Finance App</title>
+    <!-- Include CSS and JavaScript links here -->
+    <link rel="stylesheet" type="text/css" href="D:\personal_finance_app\static\css\styles.css">
+    <link rel="stylesheet" href="D:\personal_finance_app\static\js\scripts.js">
+
+
+</head>
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+<h2>Register</h2>
+<form method="POST" action="register.html">
+    {{ form.hidden_tag() }}
+    {{ form.username.label }} {{ form.username() }}
+    {{ form.password.label }} {{ form.password() }}
+    {{ form.confirm_password.label }} {{ form.confirm_password() }}
+    {{ form.submit() }}
+</form>
+<p>Already have an account? <a href="login.html">Login</a></p>
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,88 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for header, footer, and content */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Form styling */
+form {
+    margin-top: 10px;
+}
+
+/* Input fields */
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* List items */
+ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+/* Recommendations list */
+ul li::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+/* Highlighting active link */
+.active {
+    font-weight: bold;
+}
+
+/* Centering elements */
+.center {
+    text-align: center;
+}
+
+/* Spacing and margins */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .content {
+        padding: 10px;
+    }
+}
