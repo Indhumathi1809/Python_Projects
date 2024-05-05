@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-right:30px;
+    padding-left:10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top:10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.or-divider {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.or-divider:before,
+.or-divider:after {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    transform: translateY(-50%);
+}
+
+.or-divider:before {
+    left: 10;
+    margin-left: -02%;
+}
+
+.or-divider:after {
+    right: 0;
+    margin-right: -02%;
+}
+
+.google-signup {
+    background-color: #db4437;
+}
+
+.google-signup:hover {
+    background-color: #c13508;
+}
+h2{
+    font-size:20px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color:#c13508;
+}
+
+
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    color:#c13508;
+}
+
+.forgot-password {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.forgot-password a:hover {
+    color:#c13508; /* Add underline on hover */
+}
